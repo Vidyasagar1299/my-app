@@ -15,7 +15,7 @@ node{
 	        }
 	    }
    stage('Build Docker Imager'){
-   sh 'docker build -t vidyasagar1299/myweb:0.0.2 .'
+   sh 'docker build -t 12383893/myweb:0.0.2 .'
    }
    stage('Docker Image Push'){
    withCredentials([string(credentialsId: 'dockerPass', variable: 'dockerPassword')]) {
